@@ -1,0 +1,11 @@
+{application,server,
+             [{applications,[kernel,stdlib,elixir,logger,ecto,postgrex]},
+              {description,"server"},
+              {modules,['Elixir.Server','Elixir.Server.Connectivity',
+                        'Elixir.Server.Messages','Elixir.Server.Repo',
+                        'Elixir.Server.Rooms','Elixir.Server.Users',
+                        'Elixir.Server.Worker']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger,ecto,postgrex]},
+              {mod,{'Elixir.Server',[]}}]}.
