@@ -151,7 +151,7 @@ defmodule Server.Worker do
     {:noreply, state}
   end
 
-  def send_message(user, msg, from, room, %{user_info: info}) do
+  def send_message(user, msg, from, room, info) do
     {_, receive_addr} = Map.get(info, user)
     GenServer.cast({:some_client, receive_addr}, {:receive_msg, msg, from, room})
   end
