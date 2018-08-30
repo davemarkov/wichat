@@ -1,7 +1,7 @@
 # wichat
 
 Console based application, using Elixir for 
-both client and server side, storring all users data and history in a database (Postgres), using Ecto library to interact with it.
+both client and server side, storring all users' data and history in a database (Postgres), using Ecto library to interact with it.
 
 
 A user can create an account and log in to view history for each chat his is a part of.
